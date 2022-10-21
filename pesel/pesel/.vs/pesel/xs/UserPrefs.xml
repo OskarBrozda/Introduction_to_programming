@@ -1,13 +1,19 @@
 ﻿<Properties StartupConfiguration="{53124F8A-0DDE-4D1D-8989-EB11A45B7123}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../WDP/WinFormsApp1/Form1.cs">
     <Files>
-      <File FileName="Program.cs" Line="142" Column="37" />
-      <File FileName="../../wiek_do_emerytury/Program.cs" Line="16" Column="9" />
+      <File FileName="Program.cs" Line="208" Column="29" />
+      <File FileName="../../../WDP/WinFormsApp1/Form1.cs" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="pesel" expanded="True">
+          <Node name="pesel" expanded="True" selected="True">
             <Node name="pesel" expanded="True" />
           </Node>
         </State>
@@ -17,11 +23,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.pesel PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
