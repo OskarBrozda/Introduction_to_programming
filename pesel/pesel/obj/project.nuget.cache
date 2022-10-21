@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TLo3sGBx5rKEAXE06dJWbvDaZha2WyXWl9kxIY/DSp+F1luq/30LknoknOFnyvozLZrmtcNXm1RSy7IEjgE6Ng==",
+  "dgSpecHash": "kteYX2D6OZNgy1UN5Aj3xhCidrq/uwNzmKwcCeurA1qDtVFdsVfbwRZcRjV1y5X8UL/swnj+8KVxe44UX96YzA==",
   "success": true,
-  "projectFilePath": "/Users/oskarbrozda/GitHub/my/pesel/pesel/pesel.csproj",
+  "projectFilePath": "/Users/oskarbrozda/GitHub/my_projects/pesel/pesel/pesel.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

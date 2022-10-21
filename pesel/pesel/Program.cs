@@ -4,6 +4,7 @@ class pesel
 {
     static void Main(string[] arg)
     {
+
         //przywitanie użytkownika
         Console.WriteLine("Cześć, jak się nazywasz (imię i nazwisko)?");
         var id = Console.ReadLine();
@@ -27,18 +28,36 @@ class pesel
         Int64 L11 = Pesel % 10;
 
         //informacje o dacie urodzenia
-        Int64 day = L1 * 10 + L2;
+        Int64 day = L5 * 10 + L6;
         Int64 month;
-        if ((L5 * 10 + L6 > 22) && L3*10+L4<10)
+        string monthstr;
+        if (L1 * 10 + L2 > 22)
         {
             month = L3 * 10 + L4;
-            //String.Format("{0:00.0}", L3 * 10 + L4);
+            monthstr = string.Format("{0:00}", month);
+
         }
         else
         {
             month = L3 * 10 + L4 - 20;
+            monthstr = string.Format("{0:00}", month);
         }
-
+        Int64 year;
+        string yearstr;
+        string yearstr2;
+        if(L1 * 10 + L2 > 22)
+        {
+            year = L1 * 10 + L2;
+            yearstr = string.Format("{0:00}", year);
+            yearstr2 = ("19" + yearstr);
+        }
+        else
+        {
+            year = L1 * 10 + L2;
+            yearstr = string.Format("{0:00}", year);
+            yearstr2 = ("20" + yearstr);
+        }
+                    
         //informacja o płci
         Int64 Sex = (Pesel / 10) % 10;
         string Sex2;
@@ -102,8 +121,10 @@ class pesel
         }
 
         //info dla użytkownika
-        Console.WriteLine("data urodzenia: " + day + "." + month + ".");
-        Console.WriteLine("płeć: " + Sex2);
+        Console.WriteLine();
+        Console.WriteLine(dane[1] + ": ");
+        Console.WriteLine("Data urodzenia: " + day + "." + monthstr + "." + yearstr2);
+        Console.WriteLine("Płeć: " + Sex2);
 
 
         Console.ReadKey();
