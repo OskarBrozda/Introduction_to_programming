@@ -4,10 +4,39 @@ class pesel
 {
     static void Main(string[] arg)
     {
-        //przywitanie użytkownika i deklaracja zmiennych wykorzystanych potem w do...while
+
+        //test pustego intigera
+        //Console.WriteLine("Podaj testową liczbę: ");
+        //int test= int.Parse(Console.ReadLine());
+        //Console.WriteLine(test == null ? "Coś tu pusto." : "Wybrałeś: " + test);
+
+
+        //przywitanie użytkownika
+        string id;
         Console.WriteLine("Dzień dobry, jak się nazywasz (imię i nazwisko)?");
-        var id = Console.ReadLine();
+        do
+        {
+            id = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(id))
+            {
+                Console.WriteLine("Pole nie może zostać puste, podaj imię i nazwisko: ");
+            }
+        } while (string.IsNullOrEmpty(id));
+        
         var dane = id.Trim().Split(" ");
+
+        //jesli ktoś poda tylko imię
+        //if (dane[1] == null)
+        //{
+        //    do
+        //    {
+        //        Console.WriteLine("Podaj również nazwisko: ");
+        //        dane[1] = Console.ReadLine();
+        //    } while (dane[1] == null);
+        //}
+
+        //deklaracja zmiennych wykorzystanych potem w do...while
         Int64 Pesel;
         Int64 L1;
         Int64 L2;
@@ -30,23 +59,34 @@ class pesel
         double Controlsum;
 
 
-        do
-        {
-            //prośba o numer pesel
-            Console.Write("Witaj " + dane[0] + ", podaj swój numer pesel: ");
-            Pesel = Int64.Parse(Console.ReadLine());
+        //prośba o numer pesel
+        Console.Write("Witaj " + dane[0] + ", podaj swój numer pesel: ");
+        
 
+        do
+        {            
+            Pesel = Int64.Parse(Console.ReadLine());
+            //do
+            //{
+            //    if (Pesel == null)
+            //    {
+            //        Console.Write("Pole nie może zostać puste, podaj pesel: ");
+            //    }
+            //} while (Pesel == null);
+
+
+            //rozdzielenie nr pesel na czynniki
             //wyodrebnienie każdej z cyfr nr pesel
-            L1 = (Pesel / 10000000000) % 10;
-            L2 = (Pesel / 1000000000) % 10;
-            L3 = (Pesel / 100000000) % 10;
-            L4 = (Pesel / 10000000) % 10;
-            L5 = (Pesel / 1000000) % 10;
-            L6 = (Pesel / 100000) % 10;
-            L7 = (Pesel / 10000) % 10;
-            L8 = (Pesel / 1000) % 10;
-            L9 = (Pesel / 100) % 10;
-            L10 = (Pesel / 10) % 10;
+            L1 = Pesel / 10000000000 % 10;
+            L2 = Pesel / 1000000000 % 10;
+            L3 = Pesel / 100000000 % 10;
+            L4 = Pesel / 10000000 % 10;
+            L5 = Pesel / 1000000 % 10;
+            L6 = Pesel / 100000 % 10;
+            L7 = Pesel / 10000 % 10;
+            L8 = Pesel / 1000 % 10;
+            L9 = Pesel / 100 % 10;
+            L10 = Pesel / 10 % 10;
             L11 = Pesel % 10;
 
             //informacje o dacie urodzenia
@@ -55,7 +95,6 @@ class pesel
             {
                 month = L3 * 10 + L4;
                 monthstr = string.Format("{0:00}", month);
-
             }
             else
             {
@@ -84,8 +123,7 @@ class pesel
             {
                 Sex2 = "mężczyzna";
             }
-
-            //rozdzielenie nr pesel na czynniki
+                        
             //suma kontorlna
             if (L2 * 3 >= 10)
             {
@@ -155,6 +193,11 @@ class pesel
             {
                 Controlsum = 10 - ((L1 + L2 + L3 + L4 + L5 + L6 + L7 + L8 + L9 + L10) % 10);
             }
+
+            if (L11 != Controlsum)
+            {
+                Console.Write("Błędny numer pesel. Podaj ponownie: ");
+            }
         } while (L11 != Controlsum);
         
            
@@ -206,10 +249,10 @@ class pesel
 
         //wiadomośc końcowa dla użytkownika
         Console.WriteLine();
-        Console.WriteLine(dane[1] +" "+ dane[0] + ": ");
-        Console.WriteLine("Data urodzenia: " + day + "." + monthstr + "." + yearstr);
+        Console.WriteLine("Podstawowe informacje o " + dane[1] +" "+ dane[0] + ": ");
+        Console.WriteLine("Data urodzenia: " + day + "." + monthstr + "." + yearstr + " r.");
         Console.WriteLine("Płeć: " + Sex2);
-        Console.WriteLine("Suma kontrolna: ZGODNA");
+        Console.WriteLine("Suma kontrolna pesel: ZGODNA");
         Console.WriteLine();
         Console.WriteLine("Ciekawostka:");
 
