@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/oskarbrozda/Projekty/Visual Studio/emerytura1/emerytura1.csproj": {}
+    "/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/emerytura1.csproj": {}
   },
   "projects": {
-    "/Users/oskarbrozda/Projekty/Visual Studio/emerytura1/emerytura1.csproj": {
+    "/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/emerytura1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oskarbrozda/Projekty/Visual Studio/emerytura1/emerytura1.csproj",
+        "projectUniqueName": "/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/emerytura1.csproj",
         "projectName": "emerytura1",
-        "projectPath": "/Users/oskarbrozda/Projekty/Visual Studio/emerytura1/emerytura1.csproj",
+        "projectPath": "/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/emerytura1.csproj",
         "packagesPath": "/Users/oskarbrozda/.nuget/packages/",
-        "outputPath": "/Users/oskarbrozda/Projekty/Visual Studio/emerytura1/obj/",
+        "outputPath": "/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/oskarbrozda/.nuget/NuGet/NuGet.Config"

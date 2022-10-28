@@ -11,8 +11,6 @@ class Emeryturka
         var person = Console.ReadLine();
         var dane = person.Split(' ');
         int wiek = int.Parse(dane[1]);
-       
-
         int retirementAge;
         string years;
 
@@ -61,8 +59,7 @@ class Emeryturka
         {
             Console.WriteLine("Jesteś na emeryturze od " + (wiek-retirementAge) + " " + years  + ".");
         }
-
-       
+               
         Console.ReadKey();
     }
 

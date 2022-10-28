@@ -13,3 +13,18 @@
 /Users/oskarbrozda/Projekty/Visual Studio/emerytura1/obj/Debug/net6.0/emerytura1.pdb
 /Users/oskarbrozda/Projekty/Visual Studio/emerytura1/obj/Debug/net6.0/emerytura1.genruntimeconfig.cache
 /Users/oskarbrozda/Projekty/Visual Studio/emerytura1/obj/Debug/net6.0/ref/emerytura1.dll
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/bin/Debug/net6.0/emerytura1
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/bin/Debug/net6.0/emerytura1.deps.json
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/bin/Debug/net6.0/emerytura1.runtimeconfig.json
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/bin/Debug/net6.0/emerytura1.dll
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/bin/Debug/net6.0/emerytura1.pdb
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/emerytura1.csproj.AssemblyReference.cache
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/emerytura1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/emerytura1.AssemblyInfoInputs.cache
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/emerytura1.AssemblyInfo.cs
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/emerytura1.csproj.CoreCompileInputs.cache
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/emerytura1.dll
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/refint/emerytura1.dll
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/emerytura1.pdb
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/emerytura1.genruntimeconfig.cache
+/Users/oskarbrozda/GitHub/my_projects/wiek_do_emerytury/obj/Debug/net6.0/ref/emerytura1.dll
