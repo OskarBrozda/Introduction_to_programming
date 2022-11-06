@@ -7,7 +7,7 @@ class pesel
 
         //test pustego intigera
         //Console.WriteLine("Podaj testową liczbę: ");
-        //int test= int.Parse(Console.ReadLine());
+        //int test = int.Parse(Console.ReadLine());
         //Console.WriteLine(test == null ? "Coś tu pusto." : "Wybrałeś: " + test);
 
 
@@ -23,18 +23,19 @@ class pesel
                 Console.WriteLine("Pole nie może zostać puste, podaj imię i nazwisko: ");
             }
         } while (string.IsNullOrEmpty(id));
-        
-        var dane = id.Trim().Split(" ");
+
+        string[] dane = new string[2];
+        dane = id.Trim().Split(" ");
 
         //jesli ktoś poda tylko imię
-        //if (dane[1] == null)
-        //{
-        //    do
-        //    {
-        //        Console.WriteLine("Podaj również nazwisko: ");
-        //        dane[1] = Console.ReadLine();
-        //    } while (dane[1] == null);
-        //}
+        if (dane[1] == null)
+        {
+            do
+            {
+                Console.WriteLine("Podaj również nazwisko: ");
+                dane[1] = Console.ReadLine();
+            } while (dane[1] == null);
+        }
 
         //deklaracja zmiennych wykorzystanych potem w do...while
         Int64 Pesel;
