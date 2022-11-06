@@ -17,7 +17,7 @@ class pesel
         do
         {
             id = Console.ReadLine();
-
+            
             if (string.IsNullOrEmpty(id))
             {
                 Console.WriteLine("Pole nie może zostać puste, podaj imię i nazwisko: ");
@@ -27,7 +27,7 @@ class pesel
         string[] dane = new string[2];
         dane = id.Trim().Split(" ");
 
-        //jesli ktoś poda tylko imię
+        //jesli ktoś poda tylko imię 
         if (dane[1] == null)
         {
             do
