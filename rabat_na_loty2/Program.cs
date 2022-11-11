@@ -3,6 +3,11 @@ Console.WriteLine("Hello, World!");
 
 class rabat
 {
-    poszłoooo
-        tets 3
+    static void Main()
+    {
+
+    Console.WriteLine("test");
+
+    }
+
 }
