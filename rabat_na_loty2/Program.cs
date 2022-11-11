@@ -6,7 +6,7 @@ class rabat
     static void Main()
     {
 
-    Console.WriteLine("test");
+    Console.WriteLine("teścik");
 
     }
 
