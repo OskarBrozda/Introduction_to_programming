@@ -3,5 +3,6 @@ Console.WriteLine("Hello, World!");
 
 class rabat
 {
+    poszłoooo
 
 }
