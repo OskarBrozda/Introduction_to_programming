@@ -1,0 +1,15 @@
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/bin/Debug/net6.0/rabat_na_loty2
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/bin/Debug/net6.0/rabat_na_loty2.deps.json
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/bin/Debug/net6.0/rabat_na_loty2.runtimeconfig.json
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/bin/Debug/net6.0/rabat_na_loty2.dll
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/bin/Debug/net6.0/rabat_na_loty2.pdb
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/rabat_na_loty2.csproj.AssemblyReference.cache
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/rabat_na_loty2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/rabat_na_loty2.AssemblyInfoInputs.cache
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/rabat_na_loty2.AssemblyInfo.cs
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/rabat_na_loty2.csproj.CoreCompileInputs.cache
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/rabat_na_loty2.dll
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/refint/rabat_na_loty2.dll
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/rabat_na_loty2.pdb
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/rabat_na_loty2.genruntimeconfig.cache
+/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty2/obj/Debug/net6.0/ref/rabat_na_loty2.dll
