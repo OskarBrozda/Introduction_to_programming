@@ -4,5 +4,5 @@ Console.WriteLine("Hello, World!");
 class rabat
 {
     poszłoooo
-
+        tets 3
 }
