@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/oskarbrozda/GitHub/my_projects/rabat na loty/rabat_na_loty/rabat_na_loty.csproj": {}
+    "/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty/rabat_na_loty.csproj": {}
   },
   "projects": {
-    "/Users/oskarbrozda/GitHub/my_projects/rabat na loty/rabat_na_loty/rabat_na_loty.csproj": {
+    "/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty/rabat_na_loty.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oskarbrozda/GitHub/my_projects/rabat na loty/rabat_na_loty/rabat_na_loty.csproj",
+        "projectUniqueName": "/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty/rabat_na_loty.csproj",
         "projectName": "rabat_na_loty",
-        "projectPath": "/Users/oskarbrozda/GitHub/my_projects/rabat na loty/rabat_na_loty/rabat_na_loty.csproj",
+        "projectPath": "/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty/rabat_na_loty.csproj",
         "packagesPath": "/Users/oskarbrozda/.nuget/packages/",
-        "outputPath": "/Users/oskarbrozda/GitHub/my_projects/rabat na loty/rabat_na_loty/obj/",
+        "outputPath": "/Users/oskarbrozda/GitHub/my_projects/rabat_na_loty/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/oskarbrozda/.nuget/NuGet/NuGet.Config"
