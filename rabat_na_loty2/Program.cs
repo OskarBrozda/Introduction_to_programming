@@ -70,7 +70,6 @@ do
 } while (birthDateInt > today);
 
 
-
 //kierunek lotu
 Console.Write("Lot będzie krajowy, czy międzynarodowy? ");
 string destinationStr;
@@ -92,7 +91,6 @@ else
 {
     destinationCountry = false;
 }
-
 
 
 //termin lotu
@@ -127,11 +125,9 @@ do
 } while (flyDateInt < today);
 
 
-
 //wiek w dzień wylotu
 int flyAge = flyDateInt.Year - birthDateInt.Year;
 if (birthDateInt.Date > flyDateInt.AddYears(-flyAge)) flyAge--;
-
 
 
 //stały klient
@@ -162,7 +158,6 @@ if (flyAge>=18)
 }
 
 
-
 //sezony wysokie
 DateTime previousChristmas1Begin = new DateTime(flyDateInt.Year - 1, 12, 20);
 DateTime previousChristmas1End = new DateTime(flyDateInt.Year, 01, 10);
@@ -184,7 +179,6 @@ if (DateTime.Compare(flyDateInt, previousChristmas1Begin) >= 0 && DateTime.Compa
 {
     highSeason = false;
 }
-
 
 
 //program do obliczania ceny po zniżkach
@@ -272,7 +266,6 @@ if (flyAge >= 2 && secondPrice < firstPrice * 0.7)
 }
 
 
-
 //odpowiedź dla użytkownika
 Console.WriteLine(); //linia odstepu dla czytelności
 if (destinationCountry == false)
@@ -285,7 +278,6 @@ else
     Console.WriteLine($@"Najkorzystniejsze połączenie krajowe dla:
 {surname} {name}, lat {flyAge}, w dniu {flyDateInt.ToString("d", new System.Globalization.CultureInfo("pl-PL"))}: {secondPrice}zł");
 }
-
 
 
 Console.ReadKey();
