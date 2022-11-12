@@ -3,11 +3,11 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.rabat__na__loty2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="39" Column="22" />
-      <File FileName="../pesel/pesel/Program.cs" Line="19" Column="24" />
-      <File FileName="../../../Projekty/Visual Studio/moje testy/moje_testy/Program.cs" Line="114" Column="27" />
+      <File FileName="Program.cs" Line="15" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,6 +23,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.rabat__na__loty2 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
