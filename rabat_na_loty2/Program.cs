@@ -2,8 +2,13 @@
 using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 
+//deklarujemy cene pierwotną naszego lotu, bez żadnych zniżek
+double firstPrice = 1000; 
+
+
 //witamy użytkownika
-Console.WriteLine("Witaj w systemie rezerwacji lotów online! Podaj następujące informacje:");
+Console.WriteLine("Witaj w systemie wyceny lotów online! Potrzebuję kilka informacji:");
+
 
 //imię
 Console.Write("Imię: ");
@@ -17,6 +22,7 @@ do
     }
 } while (string.IsNullOrEmpty(name));
 
+
 //nazwisko
 Console.Write("Nazwisko: ");
 string surname;
@@ -29,9 +35,10 @@ do
     }
 } while (string.IsNullOrEmpty(surname));
 
+
 //data urodzenia
 Console.Write("Data urodzenia (dd.mm.yyyy): ");
-var today = DateTime.Today;
+DateTime today = DateTime.Today;
 DateTime birthDateInt;
 do
 {
@@ -62,13 +69,34 @@ do
     }
 } while (birthDateInt > today);
 
+
+
 //kierunek lotu
-Console.WriteLine("Lot bedzie w krajowy, czy międzynarodowy? ");
-string destination = Console.ReadLine();
-//destination.Contains("kraj");
+Console.Write("Lot będzie krajowy, czy międzynarodowy? ");
+string destinationStr;
+do
+{
+    destinationStr = Console.ReadLine();
+    if (string.IsNullOrEmpty(destinationStr))
+    {
+        Console.Write("Pole nie może zostać puste. Lot będzie krajowy, czy międzynarodowy? ");
+    }
+} while (string.IsNullOrEmpty(destinationStr));
+
+bool destinationCountry;
+if (destinationStr.Contains("kraj"))
+{
+    destinationCountry = true;
+}
+else
+{
+    destinationCountry = false;
+}
+
+
 
 //termin lotu
-Console.Write("Data termin wylotu (dd.mm.yyyy): ");
+Console.Write("Data wylotu (dd.mm.yyyy): ");
 DateTime flyDateInt;
 do
 {
@@ -94,21 +122,45 @@ do
     flyDateInt = new DateTime(tablica2Int[2], tablica2Int[1], tablica2Int[0]);
     if (flyDateInt < today)
     {
-        Console.Write("Nie mozna wyszukac lotu z przeszłości. Podaj poprawną datę wylotu (dd.mm.yyyy): ");
+        Console.Write("Nie można wyszukać lotu z przeszłości. Podaj poprawną datę wylotu (dd.mm.yyyy): ");
     }
 } while (flyDateInt < today);
 
 
+
 //wiek w dzień wylotu
-int flyAge;
-if(int.Parse($"{flyDateInt.Year}{flyDateInt.Month}{flyDateInt.Day}") - int.Parse($"{birthDateInt.Year}{birthDateInt.Month}{birthDateInt.Day}")>1000000)
+int flyAge = flyDateInt.Year - birthDateInt.Year;
+if (birthDateInt.Date > flyDateInt.AddYears(-flyAge)) flyAge--;
+
+
+
+//stały klient
+bool regularCustomer;
+if (flyAge>=18)
 {
-    flyAge= ((int.Parse($"{flyDateInt.Year}{flyDateInt.Month}{flyDateInt.Day}") - int.Parse($"{birthDateInt.Year}{birthDateInt.Month}{birthDateInt.Day}")) / 10000);
-}
-else
+    string answear;
+    Console.Write("Czy jesteś stałym klientem? ");
+    do
+    {
+        answear = Console.ReadLine();
+        if (string.IsNullOrEmpty(answear))
+        {
+            Console.Write("Pole nie może zostać puste. Czy jesteś stałym klientem? ");
+        }
+    } while (string.IsNullOrEmpty(answear));
+
+    if (answear.Contains("t") || answear.Contains("y"))
+    {
+        regularCustomer = true;
+    } else
+    {
+        regularCustomer = false;
+    }
+}else
 {
-    flyAge = ((int.Parse($"{flyDateInt.Year}{flyDateInt.Month}{flyDateInt.Day}") - int.Parse($"{birthDateInt.Year}{birthDateInt.Month}{birthDateInt.Day}")) / 1000);
+    regularCustomer = false;
 }
+
 
 
 //sezony wysokie
@@ -134,5 +186,106 @@ if (DateTime.Compare(flyDateInt, previousChristmas1Begin) >= 0 && DateTime.Compa
 }
 
 
-    Console.ReadKey();
 
+//program do obliczania ceny po zniżkach
+double secondPrice = 0; //cena ze zniżką
+
+if (flyAge < 2)
+{
+   
+    if (destinationCountry == true)
+    {
+        secondPrice = firstPrice * 0.2;
+    }
+    else 
+    {
+        secondPrice = firstPrice * 0.3 * 0.85;
+    }
+    if (today.AddMonths(5) < flyDateInt)
+    {
+        secondPrice = secondPrice * 0.9;
+    }     
+}
+
+if (flyAge >= 2 && flyAge<16)
+{
+    if (destinationCountry == true)
+    {
+        secondPrice = firstPrice * 0.9;
+    }
+    else if((destinationCountry == false) && (highSeason == false))
+    {
+        secondPrice = firstPrice * 0.9 * 0.85;
+    }
+    else
+    {
+        secondPrice = firstPrice;
+    }
+    if (today.AddMonths(5) < flyDateInt)
+    {
+        secondPrice = secondPrice * 0.9;
+    }  
+}
+
+if (flyAge >= 16 && flyAge < 18)
+{
+    if ((destinationCountry == false) && (highSeason == false))
+    {
+        secondPrice = firstPrice * 0.85;
+    }
+    else
+    {
+        secondPrice = firstPrice;
+    }
+    if (today.AddMonths(5) < flyDateInt)
+    {
+        secondPrice = secondPrice * 0.9;
+    }
+}
+if (flyAge >= 18)
+{
+    if ((destinationCountry == false) && (highSeason == false))
+    {
+        secondPrice = firstPrice * 0.85;
+    }
+    else 
+    {
+        secondPrice = firstPrice;
+    }
+    if (today.AddMonths(5) < flyDateInt)
+    {
+        secondPrice = secondPrice * 0.9;
+    }
+    if (regularCustomer == true)
+    {
+        secondPrice = secondPrice * 0.85;
+    }  
+}
+
+if (flyAge < 2 && secondPrice < firstPrice * 0.2)
+{
+    secondPrice = firstPrice * 0.2;
+}
+if (flyAge >= 2 && secondPrice < firstPrice * 0.7)
+{
+    secondPrice = firstPrice * 0.7;
+}
+
+
+
+//odpowiedź dla użytkownika
+Console.WriteLine(); //linia odstepu dla czytelności
+if (destinationCountry == false)
+{
+    Console.WriteLine($@"Najkorzystniejsze połączenie międzynarodowe dla:
+{surname} {name}, lat {flyAge}, w dniu {flyDateInt.ToString("d", new System.Globalization.CultureInfo("pl-PL"))}: {secondPrice}zł");
+}
+else
+{
+    Console.WriteLine($@"Najkorzystniejsze połączenie krajowe dla:
+{surname} {name}, lat {flyAge}, w dniu {flyDateInt.ToString("d", new System.Globalization.CultureInfo("pl-PL"))}: {secondPrice}zł");
+}
+
+
+
+Console.ReadKey();
