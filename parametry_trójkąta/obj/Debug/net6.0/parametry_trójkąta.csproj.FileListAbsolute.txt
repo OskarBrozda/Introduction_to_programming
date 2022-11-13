@@ -1,0 +1,15 @@
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/parametry_trójkąta.csproj.AssemblyReference.cache
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/parametry_trójkąta.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/parametry_trójkąta.AssemblyInfoInputs.cache
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/parametry_trójkąta.AssemblyInfo.cs
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/parametry_trójkąta.csproj.CoreCompileInputs.cache
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/bin/Debug/net6.0/parametry_trójkąta
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/bin/Debug/net6.0/parametry_trójkąta.deps.json
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/bin/Debug/net6.0/parametry_trójkąta.runtimeconfig.json
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/bin/Debug/net6.0/parametry_trójkąta.dll
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/bin/Debug/net6.0/parametry_trójkąta.pdb
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/parametry_trójkąta.dll
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/refint/parametry_trójkąta.dll
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/parametry_trójkąta.pdb
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/parametry_trójkąta.genruntimeconfig.cache
+/Users/oskarbrozda/GitHub/my_projects/parametry_trójkąta/obj/Debug/net6.0/ref/parametry_trójkąta.dll
