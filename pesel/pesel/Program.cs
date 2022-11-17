@@ -16,7 +16,7 @@ class pesel
         Console.WriteLine("Dzień dobry, jak się nazywasz (imię i nazwisko)?");
         do
         {
-            id = Console.ReadLine();
+            id = Console.ReadLine(); 
             
             if (string.IsNullOrEmpty(id))
             {

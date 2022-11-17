@@ -20,7 +20,12 @@ do
     {
         Console.Write("Pole nie może zostać puste. Podaj imię: ");
     }
-} while (string.IsNullOrEmpty(name));
+    if (name.Any(char.IsDigit))
+    {
+        Console.Write("Pole nie może zawierać cyfr. Podaj imię: ");
+    }
+
+} while (string.IsNullOrEmpty(name) || name.Any(char.IsDigit));
 
 
 //nazwisko
@@ -28,12 +33,17 @@ Console.Write("Nazwisko: ");
 string surname;
 do
 {
+
     surname = Console.ReadLine();
     if (string.IsNullOrEmpty(surname))
     {
         Console.Write("Pole nie może zostać puste. Podaj nazwisko: ");
     }
-} while (string.IsNullOrEmpty(surname));
+    if (surname.Any(char.IsDigit))
+    {
+        Console.Write("Pole nie może zawierać cyfr. Podaj imię: ");
+    }
+} while (string.IsNullOrEmpty(surname) || surname.Any(char.IsDigit));
 
 
 //data urodzenia
