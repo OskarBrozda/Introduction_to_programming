@@ -76,8 +76,7 @@ do
     if (birthDateInt > today)
     {
         Console.Write("Pole nie może zawierać daty z przyszłości. Podaj poprawną datę urodzenia (dd.mm.yyyy): ");
-    }
-} while (birthDateInt > today);
+    }} while (birthDateInt > today);
 
 
 //kierunek lotu
