@@ -1,0 +1,15 @@
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/bin/Debug/net7.0/sortowanie bąbelkowe
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/bin/Debug/net7.0/sortowanie bąbelkowe.deps.json
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/bin/Debug/net7.0/sortowanie bąbelkowe.runtimeconfig.json
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/bin/Debug/net7.0/sortowanie bąbelkowe.dll
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/bin/Debug/net7.0/sortowanie bąbelkowe.pdb
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/sortowanie bąbelkowe.csproj.AssemblyReference.cache
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/sortowanie bąbelkowe.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/sortowanie bąbelkowe.AssemblyInfoInputs.cache
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/sortowanie bąbelkowe.AssemblyInfo.cs
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/sortowanie bąbelkowe.csproj.CoreCompileInputs.cache
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/sortowanie bąbelkowe.dll
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/refint/sortowanie bąbelkowe.dll
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/sortowanie bąbelkowe.pdb
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/sortowanie bąbelkowe.genruntimeconfig.cache
+/Users/oskarbrozda/GitHub/Introduction_to_programming/sortowanie bąbelkowe/obj/Debug/net7.0/ref/sortowanie bąbelkowe.dll
