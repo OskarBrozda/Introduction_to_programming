@@ -39,7 +39,6 @@ namespace Horner
                     Result += int.Parse(item);
                 }
             }
-
             Console.WriteLine("Wynik: " + Result);
         }
     }
