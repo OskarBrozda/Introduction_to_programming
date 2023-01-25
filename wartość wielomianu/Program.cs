@@ -8,7 +8,7 @@ namespace Horner
     {
         static void Main()
         {
-            Console.Write("Podaj wielomian do obliczenia: ");
+            Console.Write("Nie używaj * do mnożenia (2x), używaj ^ do potegowania (2x^2).\nPodaj wielomian do obliczenia: ");
             string polynomialStr = Console.ReadLine();
             Console.Write("Podaj wartość x: ");
             int valueX = int.Parse(Console.ReadLine());
