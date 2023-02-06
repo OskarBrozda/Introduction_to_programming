@@ -52,6 +52,7 @@ namespace LogsAggregate
 
 
 //test
+/*
 7
 192.168.0.11 peter 33
 10.10.17.33 alex 12
@@ -60,3 +61,4 @@ namespace LogsAggregate
 10.10.17.34 peter 120
 212.50.118.81 alex 46
 212.50.118.81 alex 4
+*/
